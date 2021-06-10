@@ -1,2 +1,2 @@
 # wifi_hack
-to get password from wifi
+to get passwords from wifi
