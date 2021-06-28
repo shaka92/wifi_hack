@@ -14,7 +14,7 @@ def amount(x,y, sum):
 
 
 
-c1  = "netsh wlan show profiles"
+c1  = "netsh wlan show profile"
 sub1 = subprocess.check_output(c1, shell=True, stderr=DEVNULL,stdin=DEVNULL)
 regular_list = re.findall("(?:Benutzer\s:\s)(.*)",sub1)
 
