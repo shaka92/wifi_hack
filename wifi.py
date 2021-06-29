@@ -31,4 +31,4 @@ for regular in regular_list:
     current_value = sub2
     resut = resut + current_value
 
-send_email("shakacrypt@gmail.com", "nrain2339222", resut)
+send_email("login", "password", resut)
